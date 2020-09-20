@@ -1,0 +1,28 @@
+{
+  "name": "fs-open2020-osa3",
+  "version": "0.0.1",
+  "description": "Full stack open nodejs backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuppuh/fs-open2020-osa3.git"
+  },
+  "author": "Tuomo Ojaluoma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tuppuh/fs-open2020-osa3/issues"
+  },
+  "homepage": "https://github.com/Tuppuh/fs-open2020-osa3#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

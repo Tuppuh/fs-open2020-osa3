@@ -35,10 +35,12 @@ let persons = [
 ]
 
 app.get('/info', (req, res) => {
-    response = `<div>Phonebook has info for ${persons.length} people</div>`
-    response += '<br/>'
-    response += new Date()
-    res.send(response)
+    Person.countDocuments({}).then(count => {
+        response = `<div>Phonebook has info for ${count} people</div>`
+        response += '<br/>'
+        response += new Date()
+        res.send(response)
+    })
 })
 
 app.get('/api/persons', (req, res) => {

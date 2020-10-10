@@ -1,0 +1,10 @@
+frontend
+.vscode
+.gitignore
+Procfile
+README.md
+.env
+package-lock.json
+package.json
+requests
+node_modules

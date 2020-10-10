@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
 const personSchema = new mongoose.Schema({
-    name: String,
-    number: String,
+    name: {type: String, unique: true, minlength: 3},
+    number: {type: String, minlength: 8},
 })
 
 const Person = mongoose.model('Person', personSchema)

@@ -39,6 +39,9 @@ const App = () => {
             setPersons(persons.concat(returnedPerson))
             setStatusMessage({status: 'success', message: `Succesfully added number for ${returnedPerson.name}`})
         })
+        .catch(error => {
+          setStatusMessage({status: 'error', message: error.response.data.error})
+        })
       )
     }
   }
